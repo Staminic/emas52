@@ -1,0 +1,49 @@
+// Use this file to overwrite the basic Bootstrap variables and add your own variables
+// To overwrite a Bootstrap variable you don´t have to touch the Bootstrap folder.
+// Just copy a variable from /sass/bootstrap/_variables.scss, paste it here and edit the value.
+// As example you find one of the most important Bootstrap variable below: $brand-primary.
+// Thats the ugly Bootstrap blue used for all the links, primary buttons etc.
+// Just add your color code here, compile the theme.scss file to change this color everywhere
+
+//
+// Color system
+//
+
+$alefpa-blue: #00447a;
+$alefpa-light-blue: #e5ecf1;
+$medico-social: #009ee0; // bleu
+$sanitaire: #f29400; // jaune
+$social: #e7511e; // rouge
+$white: #ffffff;
+$blue-link-two: #0076bb;
+
+$primary: $alefpa-blue;
+$secondary: $social;
+
+$theme-colors: ();
+$theme-colors: map-merge(
+  (
+    "primary": $primary,
+    "secondary": $secondary,
+    "white": $white,
+  ),
+  $theme-colors
+);
+
+//
+// Fonts
+//
+
+$font-family-sans-serif: "Source Sans Pro", sans-serif;
+
+$font-size-base: 1rem;
+$font-size-body: $font-size-base * 1.25; // 20px
+
+$font-weight-semibold: 600;
+$font-weight-black: 900;
+
+$h1-font-size: $font-size-base * 1.8; // 28.8px
+$h2-font-size: $font-size-base * 1.4; // 22.4px
+$h3-font-size: $font-size-base * 1.3; // 20.8px
+$h5-font-size: $font-size-base * 1.2; // 19.2px
+$h6-font-size: $font-size-base;

@@ -1,0 +1,76 @@
+.header-above {
+  padding-top: $spacer / 3;
+  padding-bottom: $spacer / 3;
+  background-color: $alefpa-light-blue;
+
+  .widget_search {
+    .btn {
+      line-height: 0;
+    }
+  }
+
+  .alefpa-backlink {
+    margin-right: $spacer;
+    margin-bottom: 0;
+    margin-left: $spacer;
+
+    a {
+      padding-right: $spacer * 2;
+      background: url("../img/alefpa-picto.svg") 100% 0 no-repeat scroll
+        transparent;
+      color: $alefpa-blue;
+      font-size: $font-size-base;
+      font-weight: $font-weight-semibold;
+      text-decoration: none;
+    }
+  }
+}
+
+.brand {
+  background-color: $white;
+
+  a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include media-breakpoint-up(lg) {
+      flex-direction: row;
+    }
+
+    padding-top: $spacer * 2;
+    padding-right: $spacer;
+    padding-bottom: $spacer;
+    padding-left: $spacer;
+    @include media-breakpoint-up(lg) {
+      padding-bottom: $spacer * 3;
+    }
+
+    text-align: center;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  .brand-name-description {
+    flex: 1;
+    color: $alefpa-blue;
+  }
+
+  .site-name {
+    margin: 0;
+    font-weight: $font-weight-black;
+  }
+
+  .site-description {
+    margin: 0;
+    line-height: $headings-line-height;
+
+    font-size: $font-size-sm;
+    @include media-breakpoint-up(sm) {
+      font-size: $h2-font-size;
+    }
+
+    font-weight: $font-weight-semibold;
+  }
+}

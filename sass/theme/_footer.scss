@@ -1,0 +1,49 @@
+#wrapper-footer-above {
+  padding-top: $spacer * 2;
+  padding-bottom: $spacer * 2;
+  background-color: $alefpa-light-blue;
+
+  .addresses {
+    text-align: center;
+  }
+}
+
+#wrapper-footer {
+  background-color: $white;
+}
+
+.site-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @include media-breakpoint-up(sm) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .logos {
+    order: -1;
+    @include media-breakpoint-up(sm) {
+      order: 1;
+    }
+
+    img {
+      height: 50px;
+      margin: $spacer / 3;
+    }
+  }
+}
+
+.addresses {
+  color: $alefpa-blue;
+  font-size: $font-size-body;
+  font-weight: $font-weight-semibold;
+
+  h3,
+  .h3 {
+    color: $alefpa-blue;
+    font-size: $font-size-body;
+    font-weight: $font-weight-bold;
+  }
+}

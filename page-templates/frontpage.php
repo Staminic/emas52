@@ -1,0 +1,51 @@
+<?php
+/**
+ * Template Name: Page d'accueil
+ *
+ * Page d'accueil.
+ *
+ * @package understrap
+ */
+
+// Exit if accessed directly.
+defined( 'ABSPATH' ) || exit;
+
+get_header();
+
+$container = get_theme_mod( 'understrap_container_type' );
+
+?>
+
+<div class="wrapper" id="page-wrapper">
+
+	<div class="<?php echo esc_attr( $container ); ?>" id="content" tabindex="-1">
+
+		<div class="row">
+
+			<?php get_template_part( 'global-templates/left-sidebar-check' ); ?>
+
+			<main class="site-main" id="main">
+
+				<?php while ( have_posts() ) : the_post(); ?>
+
+					<?php get_template_part( 'loop-templates/content', 'frontpage' ); ?>
+
+					<?php
+					if ( comments_open() || get_comments_number() ) :
+						comments_template();
+					endif;
+					?>
+
+				<?php endwhile; ?>
+
+			</main>
+
+			<?php get_template_part( 'global-templates/right-sidebar-check' ); ?>
+
+		</div>
+
+	</div>
+
+</div>
+
+<?php get_footer(); ?>

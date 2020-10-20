@@ -1,0 +1,53 @@
+body.home {
+  article.page {
+    background-color: $alefpa-blue;
+  }
+
+  .inner {
+    padding-bottom: 0;
+  }
+
+  .wp-block-columns {
+    margin-bottom: 0;
+  }
+
+  .wp-block-column {
+    &:first-child {
+      margin-bottom: $spacer;
+      @include media-breakpoint-up(lg) {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .entry-content {
+    line-height: $headings-line-height;
+    color: $white;
+    font-size: $h2-font-size;
+    font-weight: $font-weight-bold;
+    text-align: center;
+
+    figure {
+      margin: 0;
+    }
+
+    h2 {
+      margin: 0;
+      background-color: $medico-social;
+
+      a {
+        display: block;
+        padding: $spacer 0;
+        color: $white;
+
+        font-size: $h2-font-size;
+        @include media-breakpoint-up(lg) {
+          font-size: $h1-font-size;
+        }
+
+        font-weight: $font-weight-bold;
+        text-decoration: none;
+      }
+    }
+  }
+}
