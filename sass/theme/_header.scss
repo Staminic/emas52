@@ -68,6 +68,8 @@
 
     font-size: $font-size-sm;
     @include media-breakpoint-up(sm) {
+      padding-right: $spacer * 7;
+      padding-left: $spacer * 7;
       font-size: $h2-font-size;
     }
 

@@ -45,13 +45,13 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 				<footer class="site-footer" id="colophon">
 					
-					<a class="my-3" href="/mentions-legales">Mentions légales</a>
+					<a class="my-3 small" href="/mentions-legales">Mentions légales</a>
 					
 					<div class="logos">
 
-						<a href="https://www.occitanie.ars.sante.fr/" target="_blank" rel="noopener"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ars-occitanie-logo.png" alt="Logo de l'ARS Occitanie" /></a>
+						<a href="https://www.grand-est.ars.sante.fr/" target="_blank" rel="noopener"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ars-grand-est-logo.png" alt="Logo de l'ARS Occitanie" /></a>
 					
-						<a href="https://www.ameli.fr/pyrenees-orientales/" target="_blank" rel="noopener"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/assurance-maladie-logo.png" alt="Logo de l'Assurance maladie" /></a>
+						<a href="http://www.ac-reims.fr/" target="_blank" rel="noopener"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/academie-de-reims-logo.png" alt="Logo de l'Assurance maladie" /></a>
 					
 					</div>
 

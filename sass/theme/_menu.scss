@@ -24,30 +24,35 @@
 
     .navbar-nav {
       width: 100%;
+      justify-content: space-between;
       background-color: $medico-social;
 
       .menu-item {
-        // display: flex;
+        display: flex;
         // flex-direction: column;
         // justify-content: center;
         // align-items: center;
-        flex: 1 0 auto;
-        // margin-top: $nav-link-padding-y;
-        // margin-bottom: $nav-link-padding-y;
+        padding-top: $nav-link-padding-y;
+        padding-bottom: $nav-link-padding-y;
         line-height: 1.125;
 
         .nav-link {
-          padding-top: $spacer;
+          display: flex;
+          align-items: center;
+          padding-top: 0;
           padding-right: 0;
-          padding-bottom: $spacer;
+          padding-bottom: 0;
           padding-left: 0;
+          padding-right: $nav-link-padding-x;
+          padding-left: $nav-link-padding-x;
+          border-right: 1px solid $white;
           font-weight: $font-weight-bold;
 
-          span {
-            padding-right: $nav-link-padding-x;
-            padding-left: $nav-link-padding-x;
-            border-right: 1px solid $white;
-          }
+          // span {
+          //   padding-right: $nav-link-padding-x;
+          //   padding-left: $nav-link-padding-x;
+          //   border-right: 1px solid $white;
+          // }
 
           .fa-home {
             display: block;
@@ -59,31 +64,32 @@
         }
 
         &:first-child {
-          width: 40px;
-          // flex: unset;
+          //   width: 40px;
+          //   // flex: unset;
 
-          .nav-link {
-            font-size: $font-size-body !important;
+          //   .nav-link {
+          //     font-size: $font-size-body !important;
 
-            span {
-              display: none;
-            }
+          span {
+            display: none;
           }
+          // }
         }
 
-        &:nth-child(2) {
-          .nav-link {
-            span {
-              padding-left: 0;
-            }
-          }
-        }
+        // &:nth-child(2) {
+        //   .nav-link {
+        //     span {
+        //       padding-left: 0;
+        //     }
+        //   }
+        // }
 
         &:nth-last-child(2) {
           .nav-link {
-            span {
-              border: none;
-            }
+            border: none;
+            // span {
+            //   border: none;
+            // }
           }
         }
 
@@ -91,9 +97,11 @@
           background-color: $social;
 
           .nav-link {
-            span {
-              border: none;
-            }
+            border: none;
+
+            // span {
+            //   border: none;
+            // }
           }
         }
       }

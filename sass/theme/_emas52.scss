@@ -141,6 +141,7 @@ a.back-to-summary {
 .list-unstyled {
   &.numbers {
     li {
+      display: flex;
       margin-bottom: $spacer;
 
       img {
@@ -208,4 +209,13 @@ figcaption {
   content: "";
   display: block;
   padding-top: 41.33%;
+}
+
+a[href$=".pdf"] {
+  &::before {
+    content: "\f1c1";
+    display: inline-block;
+    margin-right: 0.25rem;
+    font-family: "FontAwesome";
+  }
 }
